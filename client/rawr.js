@@ -1,5 +1,5 @@
-var myClass = (function () {
-    function myClass() {
+var MyClass = (function () {
+    function MyClass() {
         var _this = this;
         this.myButton = document.getElementById('myButton');
         this.myArea = document.getElementById('myArea');
@@ -52,14 +52,14 @@ var myClass = (function () {
             }, 10000);
         });
     }
-    myClass.prototype.changeButton = function () {
+    MyClass.prototype.changeButton = function () {
         if (this.myArea) {
             navigator.geolocation.getCurrentPosition(this.success, this.error, this.options);
         }
     };
-    return myClass;
+    return MyClass;
 }());
-var MyClass = new myClass();
+var myClass = new MyClass();
 function handleButtonClick() {
-    MyClass.changeButton();
+    myClass.changeButton();
 }
