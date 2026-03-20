@@ -1,0 +1,126 @@
+@keyframes myAnimation {
+    0%   {background-image: url("burrito.jpg");}
+    25%  {background-image: url("joshHutchersonWhistle.gif")}
+    50%  {background-image: url("stronch.jpg")}
+    75%  {background-image: url("dancingCat.gif");}
+    100% {background-image: url("burrito.jpg")}
+}
+@keyframes car {
+    0% {left: 0; top: 400rem;}
+    25% {left: 40rem; top: 20rem;}
+    35% {left: 0; top: 2rem;}
+    40% {scale: 1.5;}
+    50% {left: 4rem; top: 2rem; rotate: 180deg;}
+    75% {left: -40rem; top: 20rem; rotate: 17deg;}
+    85% {left: 0; top: 30rem; rotate: -130deg; scale: 0;}
+    100% {left: 0; top: 400rem;}
+}
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(150%) translateY(100%);
+    }
+    40% {
+        transform: translateY(60%) rotate(93deg);
+    }
+    80% {
+        transform: translateX(-10%) rotate(-159deg);
+    }
+    90% {
+        transform: translateX(5%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+@keyframes disappear {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+@keyframes appear {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+body{
+    min-height: 100vh;
+    overflow: hidden;
+    font-size: 1.5rem;
+    animation: slideInFromRight 5s ease-out;
+
+    nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        width: 100%;
+        font-size: 2rem;
+        padding-top: .5rem;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 10rem;
+
+
+        button {
+            width: 10rem;
+        }
+
+        p {
+            width: 10rem;
+            animation-name: myAnimation;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        h1 {
+            text-align: center;
+            width: 10rem;
+        }
+
+        iframe {
+            width: 45rem;
+            height: 45rem;
+            border: none;
+            animation-name: car;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+    }
+    .garageDoor {
+        width: 100vw;
+        height: 100vh;
+        object-fit: cover;
+        display: none;
+        margin: 0;
+    }
+
+}
