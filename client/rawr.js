@@ -13,6 +13,8 @@ var MyClass = (function () {
             timeout: 5000,
             maximumAge: 0
         };
+        this.backGround = document.getElementById("backGround");
+        this.body = document.getElementById("body");
         this.success = function (location) {
             var crd = location.coords;
             _this.myArea.textContent = "Latitude: ".concat(crd.latitude, " Longitude: ").concat(crd.longitude, " Accuracy: ").concat(location.coords.accuracy);
@@ -33,6 +35,7 @@ var MyClass = (function () {
                 _this.garageDoor.style.animationName = 'appear';
                 _this.garageDoor.style.animationDuration = '10s';
                 _this.garageDoor.style.animationFillMode = 'forwards';
+                _this.body.style.animationDuration = '0s';
             }, 2000);
             setTimeout(function () {
                 _this.noises.textContent = '';
@@ -50,6 +53,11 @@ var MyClass = (function () {
                 _this.mainContent.style.animationDuration = '2s';
                 _this.mainContent.style.animationFillMode = 'forwards';
             }, 10000);
+        });
+        this.backGround.addEventListener('click', function () {
+            _this.body.style.animationName = 'myAnimation';
+            _this.body.style.animationDuration = '20s';
+            _this.body.style.animationIterationCount = 'infinite';
         });
     }
     MyClass.prototype.changeButton = function () {

@@ -12,6 +12,8 @@ class MyClass {
         timeout: 5000,
         maximumAge: 0
     }
+    backGround = document.getElementById("backGround") as HTMLDivElement
+    body = document.getElementById("body") as HTMLBodyElement
 
     constructor() {
         this.myButton.addEventListener('click', handleButtonClick)
@@ -25,6 +27,7 @@ class MyClass {
                 this.garageDoor.style.animationName = 'appear'
                 this.garageDoor.style.animationDuration = '10s'
                 this.garageDoor.style.animationFillMode = 'forwards'
+                this.body.style.animationDuration = '0s'
             }, 2000)
             setTimeout(() => {
             this.noises.textContent = ''
@@ -42,6 +45,11 @@ class MyClass {
                 this.mainContent.style.animationDuration = '2s'
                 this.mainContent.style.animationFillMode = 'forwards'
             }, 10000)
+        })
+        this.backGround.addEventListener('click', () => {
+            this.body.style.animationName = 'myAnimation'
+            this.body.style.animationDuration = '20s'
+            this.body.style.animationIterationCount = 'infinite'
         })
     }
 

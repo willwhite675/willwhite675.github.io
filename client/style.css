@@ -93,11 +93,7 @@ body{
 
         p {
             width: 10rem;
-            animation-name: myAnimation;
-            animation-duration: 20s;
-            animation-iteration-count: infinite;
-            background-repeat: no-repeat;
-            background-size: cover;
+
         }
 
         h1 {
@@ -116,11 +112,13 @@ body{
         }
     }
     .garageDoor {
-        width: 100vw;
+        width: 100rem;
         height: 100vh;
         object-fit: cover;
         display: none;
         margin: 0;
     }
-
+    button:hover {
+        scale: 5;
+    }
 }
