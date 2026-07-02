@@ -1,1 +1,72 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --pale-sky: #b9d6f2ff;
+  --blue-bell: #36a0fcff;
+  --sapphire: #0353a4ff;
+  --deep-space-blue: #003559ff;
+  --prussian-blue: #061a40ff;
+}
+
+@keyframes slideContentFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+body {
+  background-color: var(--prussian-blue);
+  margin: 1rem 5rem;
+  font-family: 'Roboto', sans-serif;
+  max-width: 100rem;
+  justify-self: center;
+  p, h1, h2, .pi, .table-header {
+    color: white;
+  }
+}
+
+.pi {
+  margin: 0 0.5rem;
+}
+
+.table-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.table .p-datatable-thead > tr > th,
+.table .p-datatable-tbody > tr > td {
+  padding: 1.5rem !important;
+  font-size: 1.1rem;
+  color: white;
+}
+
+a {
+  color: var(--blue-bell);
+}
+
+.section {
+  background: var(--deep-space-blue);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    margin: 1rem;
+  }
+
+  .section {
+    margin: 1rem 0;
+    padding: 1rem 0.5rem;
+  }
+
+  .table .p-datatable-thead > tr > th,
+  .table .p-datatable-tbody > tr > td {
+    padding: 0.75rem !important;
+    font-size: 0.9rem;
+  }
+}
