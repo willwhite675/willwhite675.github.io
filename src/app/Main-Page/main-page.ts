@@ -1,6 +1,5 @@
 import {Component} from '@angular/core';
 import {TableModule} from 'primeng/table';
-import * as https from 'node:https';
 
 export interface PersonalProject {
   name: string;
@@ -27,10 +26,10 @@ export interface Skill {
 @Component({
   selector: 'app-root',
   imports: [TableModule],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  templateUrl: './main-page.html',
+  styleUrl: './main-page.css',
 })
-export class App {
+export class MainPage {
   skills: Skill[] = []
   personalProjects: PersonalProject[] = [];
   workProjects: WorkProject[] = [];

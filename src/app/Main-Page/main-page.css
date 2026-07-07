@@ -1,0 +1,41 @@
+@keyframes slideContentFromBottom {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#title-card {
+  animation: slideContentFromBottom 1s ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 0.5s;
+}
+#introduction {
+  animation: slideContentFromBottom 1s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+#personalProjects {
+  animation: slideContentFromBottom 1s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+  opacity: 0;
+}
+#workProjects {
+  animation: slideContentFromBottom 1s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+#experience {
+  animation: slideContentFromBottom 1s ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.5s;
+  opacity: 0;
+}
