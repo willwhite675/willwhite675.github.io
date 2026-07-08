@@ -71,16 +71,23 @@ export class MainPage {
     this.workProjects = [
       {name: 'UIT Service Project',
         tools: 'Angular, PrimeNG, Symfony',
-        description: 'Queue for the UIT service desk'
+        description: 'Worked with the other student employees to create a queue system for the UIT service desk. The goal ' +
+          'of this project was to create a workflow to optimize the tech support service desk by adding a kiosk where users ' +
+          'can fill out a ticket, a tv that displays the current queue, and an online application for managing these tickets ' +
+          'and the queue. We used Symfony for the backend and Angular with PrimeNG for the frontend.'
       },
       {name: 'Talk to the Hawk',
-        tools: 'I have literally no idea',
-        description: 'Talk to the Hawk is when I be talking to that hawk'
+        tools: 'Typescript',
+        description: 'This project was a proof of concept to show that the University of North Dakota\'s AI chatbot Talk ' +
+          'To The Hawk could be functional on the mobile app. I set up TSConfig and converted the current Javascript into ' +
+          'Typescript in order to make the code more readable and maintainable. I was able to completely redo the style and ' +
+          'fix a few bugs that the chatbot had.'
       },
       {name: 'Memorial Union Event Request Form',
         tools: 'Angular, PrimeNG, MySQL',
-        description: 'Updated the form with new requirements and features. Included form components and steps ' +
-          'as well as more data validation and increased functionality.'
+        description: 'The purpose of this project was to rebuild the current event request form for the Memorial Union. ' +
+          'I started from scratch and used the requirements document I was provided. I was able to implement the user\'s ' +
+          'requests as well as use my user interface knowledge to create a more user-friendly form.'
       },
     ]
     this.experience = [
