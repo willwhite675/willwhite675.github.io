@@ -42,7 +42,7 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './dist/willwhite675-github-io/browser'
+          path: './docs'
 
       - name: Deploy to GitHub Pages
         id: deployment
